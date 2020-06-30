@@ -1,0 +1,46 @@
+.home {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  align-items: center;
+  text-align: center;
+  background: 
+  linear-gradient(
+  to right,
+  rgba($primary-color, 0.9),
+  rgba($primary-color, 0.5)
+  ),
+  url("/dist/img/bg1.png") center top;
+  background-size: cover;
+
+  &__name {
+    font-size: 5rem;
+    padding-bottom: 1.7rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid set-text-color($primary-color);
+
+    &--last {
+      color: $secondary-color;
+      font-weight: 700;
+    }
+  }
+
+  &__btn {
+    margin: 4rem 0;
+
+    .btn {
+      font-size: 1.5rem;
+      border-radius: 50px;
+      color: $secondary-color;
+      border: 2px solid $secondary-color;
+      padding: 0.5rem 3rem;
+      font-weight: 500;
+      @include transition-ease;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: $primary-color;
+      }
+    }
+  }
+}
